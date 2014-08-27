@@ -11,14 +11,24 @@
 		4C4E96D419ACD4AB00E744BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4E96D319ACD4AB00E744BB /* CoreGraphics.framework */; };
 		4C4E96D619ACD4AB00E744BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4E96D519ACD4AB00E744BB /* UIKit.framework */; };
 		4C4E96DC19ACD4AB00E744BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E96DA19ACD4AB00E744BB /* InfoPlist.strings */; };
-		4C4E96DE19ACD4AB00E744BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E96DD19ACD4AB00E744BB /* main.m */; };
-		4C4E96E219ACD4AB00E744BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E96E119ACD4AB00E744BB /* AppDelegate.m */; };
 		4C4E96E419ACD4AB00E744BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E96E319ACD4AB00E744BB /* Images.xcassets */; };
 		4C4E96EB19ACD4AB00E744BB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4E96EA19ACD4AB00E744BB /* XCTest.framework */; };
 		4C4E96EC19ACD4AB00E744BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4E96D119ACD4AB00E744BB /* Foundation.framework */; };
 		4C4E96ED19ACD4AB00E744BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4E96D519ACD4AB00E744BB /* UIKit.framework */; };
 		4C4E96F519ACD4AB00E744BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E96F319ACD4AB00E744BB /* InfoPlist.strings */; };
 		4C4E96F719ACD4AB00E744BB /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E96F619ACD4AB00E744BB /* ____Tests.m */; };
+		4C5C60C819AE1D8A0078C15F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C60BC19AE1D8A0078C15F /* AppDelegate.m */; };
+		4C5C60C919AE1D8A0078C15F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C60BD19AE1D8A0078C15F /* main.m */; };
+		4C5C60CA19AE1D8A0078C15F /* 蔷薇岛屿-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C5C60BE19AE1D8A0078C15F /* 蔷薇岛屿-Info.plist */; };
+		4C5C60CD19AE1DAF0078C15F /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C60CC19AE1DAF0078C15F /* TabBarViewController.m */; };
+		4CC4323F19AE22510066C289 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4323E19AE22510066C289 /* NavigationViewController.m */; };
+		4CC4324419AE24FF0066C289 /* UIImage+PY.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4324319AE24FF0066C289 /* UIImage+PY.m */; };
+		4CC4324719AE28690066C289 /* TabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4324619AE28690066C289 /* TabBarView.m */; };
+		4CC4324A19AE29800066C289 /* TabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4324919AE29800066C289 /* TabBarButton.m */; };
+		4CC4324D19AE41290066C289 /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4324C19AE41290066C289 /* CategoryTableViewController.m */; };
+		4CC4325019AE41830066C289 /* HotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4324F19AE41830066C289 /* HotViewController.m */; };
+		4CC4325319AE41B30066C289 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4325219AE41B30066C289 /* PlayViewController.m */; };
+		4CC4325619AE420A0066C289 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4325519AE420A0066C289 /* SettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +46,37 @@
 		4C4E96D119ACD4AB00E744BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C4E96D319ACD4AB00E744BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4C4E96D519ACD4AB00E744BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4C4E96D919ACD4AB00E744BB /* 蔷薇岛屿-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "蔷薇岛屿-Info.plist"; sourceTree = "<group>"; };
 		4C4E96DB19ACD4AB00E744BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C4E96DD19ACD4AB00E744BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C4E96DF19ACD4AB00E744BB /* 蔷薇岛屿-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "蔷薇岛屿-Prefix.pch"; sourceTree = "<group>"; };
-		4C4E96E019ACD4AB00E744BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4C4E96E119ACD4AB00E744BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4C4E96E319ACD4AB00E744BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C4E96E919ACD4AB00E744BB /* 蔷薇岛屿Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "蔷薇岛屿Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4E96EA19ACD4AB00E744BB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4C4E96F219ACD4AB00E744BB /* 蔷薇岛屿Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "蔷薇岛屿Tests-Info.plist"; sourceTree = "<group>"; };
 		4C4E96F419ACD4AB00E744BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C4E96F619ACD4AB00E744BB /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		4C5C60BB19AE1D8A0078C15F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C5C60BC19AE1D8A0078C15F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C5C60BD19AE1D8A0078C15F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C5C60BE19AE1D8A0078C15F /* 蔷薇岛屿-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "蔷薇岛屿-Info.plist"; sourceTree = "<group>"; };
+		4C5C60BF19AE1D8A0078C15F /* 蔷薇岛屿-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "蔷薇岛屿-Prefix.pch"; sourceTree = "<group>"; };
+		4C5C60CB19AE1DAF0078C15F /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		4C5C60CC19AE1DAF0078C15F /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		4CC4323D19AE22510066C289 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		4CC4323E19AE22510066C289 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		4CC4324019AE241A0066C289 /* Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
+		4CC4324219AE24FF0066C289 /* UIImage+PY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PY.h"; sourceTree = "<group>"; };
+		4CC4324319AE24FF0066C289 /* UIImage+PY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PY.m"; sourceTree = "<group>"; };
+		4CC4324519AE28690066C289 /* TabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarView.h; sourceTree = "<group>"; };
+		4CC4324619AE28690066C289 /* TabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarView.m; sourceTree = "<group>"; };
+		4CC4324819AE29800066C289 /* TabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarButton.h; sourceTree = "<group>"; };
+		4CC4324919AE29800066C289 /* TabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarButton.m; sourceTree = "<group>"; };
+		4CC4324B19AE41290066C289 /* CategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewController.h; sourceTree = "<group>"; };
+		4CC4324C19AE41290066C289 /* CategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewController.m; sourceTree = "<group>"; };
+		4CC4324E19AE41830066C289 /* HotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotViewController.h; sourceTree = "<group>"; };
+		4CC4324F19AE41830066C289 /* HotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotViewController.m; sourceTree = "<group>"; };
+		4CC4325119AE41B30066C289 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		4CC4325219AE41B30066C289 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		4CC4325419AE420A0066C289 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		4CC4325519AE420A0066C289 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +136,7 @@
 		4C4E96D719ACD4AB00E744BB /* 蔷薇岛屿 */ = {
 			isa = PBXGroup;
 			children = (
-				4C4E96E019ACD4AB00E744BB /* AppDelegate.h */,
-				4C4E96E119ACD4AB00E744BB /* AppDelegate.m */,
+				4C5C60AD19AE1D8A0078C15F /* Classes */,
 				4C4E96E319ACD4AB00E744BB /* Images.xcassets */,
 				4C4E96D819ACD4AB00E744BB /* Supporting Files */,
 			);
@@ -118,10 +146,7 @@
 		4C4E96D819ACD4AB00E744BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4C4E96D919ACD4AB00E744BB /* 蔷薇岛屿-Info.plist */,
 				4C4E96DA19ACD4AB00E744BB /* InfoPlist.strings */,
-				4C4E96DD19ACD4AB00E744BB /* main.m */,
-				4C4E96DF19ACD4AB00E744BB /* 蔷薇岛屿-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -142,6 +167,214 @@
 				4C4E96F319ACD4AB00E744BB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C5C60AD19AE1D8A0078C15F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4C5C60B219AE1D8A0078C15F /* Main(入口) */,
+				4C5C60AE19AE1D8A0078C15F /* Category（分类） */,
+				4C5C60B619AE1D8A0078C15F /* Hot（热门） */,
+				4C5C60BA19AE1D8A0078C15F /* Other */,
+				4C5C60C019AE1D8A0078C15F /* Player（播放器） */,
+				4C5C60C419AE1D8A0078C15F /* Setting（设置） */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4C5C60AE19AE1D8A0078C15F /* Category（分类） */ = {
+			isa = PBXGroup;
+			children = (
+				4C5C60AF19AE1D8A0078C15F /* Controller */,
+				4C5C60B019AE1D8A0078C15F /* Model */,
+				4C5C60B119AE1D8A0078C15F /* View */,
+			);
+			path = "Category（分类）";
+			sourceTree = "<group>";
+		};
+		4C5C60AF19AE1D8A0078C15F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4324B19AE41290066C289 /* CategoryTableViewController.h */,
+				4CC4324C19AE41290066C289 /* CategoryTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C5C60B019AE1D8A0078C15F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C5C60B119AE1D8A0078C15F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C5C60B219AE1D8A0078C15F /* Main(入口) */ = {
+			isa = PBXGroup;
+			children = (
+				4C5C60B319AE1D8A0078C15F /* Controller */,
+				4C5C60B419AE1D8A0078C15F /* Model */,
+				4C5C60B519AE1D8A0078C15F /* View */,
+			);
+			name = "Main(入口)";
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		4C5C60B319AE1D8A0078C15F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C5C60CB19AE1DAF0078C15F /* TabBarViewController.h */,
+				4C5C60CC19AE1DAF0078C15F /* TabBarViewController.m */,
+				4CC4323D19AE22510066C289 /* NavigationViewController.h */,
+				4CC4323E19AE22510066C289 /* NavigationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C5C60B419AE1D8A0078C15F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C5C60B519AE1D8A0078C15F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4324519AE28690066C289 /* TabBarView.h */,
+				4CC4324619AE28690066C289 /* TabBarView.m */,
+				4CC4324819AE29800066C289 /* TabBarButton.h */,
+				4CC4324919AE29800066C289 /* TabBarButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C5C60B619AE1D8A0078C15F /* Hot（热门） */ = {
+			isa = PBXGroup;
+			children = (
+				4C5C60B719AE1D8A0078C15F /* Controller */,
+				4C5C60B819AE1D8A0078C15F /* Model */,
+				4C5C60B919AE1D8A0078C15F /* View */,
+			);
+			path = "Hot（热门）";
+			sourceTree = "<group>";
+		};
+		4C5C60B719AE1D8A0078C15F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4324E19AE41830066C289 /* HotViewController.h */,
+				4CC4324F19AE41830066C289 /* HotViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C5C60B819AE1D8A0078C15F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C5C60B919AE1D8A0078C15F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C5C60BA19AE1D8A0078C15F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4324119AE24C90066C289 /* Category */,
+				4C5C60BB19AE1D8A0078C15F /* AppDelegate.h */,
+				4C5C60BC19AE1D8A0078C15F /* AppDelegate.m */,
+				4C5C60BD19AE1D8A0078C15F /* main.m */,
+				4C5C60BE19AE1D8A0078C15F /* 蔷薇岛屿-Info.plist */,
+				4C5C60BF19AE1D8A0078C15F /* 蔷薇岛屿-Prefix.pch */,
+				4CC4324019AE241A0066C289 /* Public.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4C5C60C019AE1D8A0078C15F /* Player（播放器） */ = {
+			isa = PBXGroup;
+			children = (
+				4C5C60C119AE1D8A0078C15F /* Controller */,
+				4C5C60C219AE1D8A0078C15F /* Model */,
+				4C5C60C319AE1D8A0078C15F /* View */,
+			);
+			path = "Player（播放器）";
+			sourceTree = "<group>";
+		};
+		4C5C60C119AE1D8A0078C15F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4325119AE41B30066C289 /* PlayViewController.h */,
+				4CC4325219AE41B30066C289 /* PlayViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C5C60C219AE1D8A0078C15F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C5C60C319AE1D8A0078C15F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C5C60C419AE1D8A0078C15F /* Setting（设置） */ = {
+			isa = PBXGroup;
+			children = (
+				4C5C60C519AE1D8A0078C15F /* Controller */,
+				4C5C60C619AE1D8A0078C15F /* Model */,
+				4C5C60C719AE1D8A0078C15F /* View */,
+			);
+			path = "Setting（设置）";
+			sourceTree = "<group>";
+		};
+		4C5C60C519AE1D8A0078C15F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4325419AE420A0066C289 /* SettingViewController.h */,
+				4CC4325519AE420A0066C289 /* SettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C5C60C619AE1D8A0078C15F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C5C60C719AE1D8A0078C15F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CC4324119AE24C90066C289 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4324219AE24FF0066C289 /* UIImage+PY.h */,
+				4CC4324319AE24FF0066C289 /* UIImage+PY.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +454,7 @@
 			files = (
 				4C4E96DC19ACD4AB00E744BB /* InfoPlist.strings in Resources */,
 				4C4E96E419ACD4AB00E744BB /* Images.xcassets in Resources */,
+				4C5C60CA19AE1D8A0078C15F /* 蔷薇岛屿-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +473,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4E96E219ACD4AB00E744BB /* AppDelegate.m in Sources */,
-				4C4E96DE19ACD4AB00E744BB /* main.m in Sources */,
+				4CC4325019AE41830066C289 /* HotViewController.m in Sources */,
+				4CC4324719AE28690066C289 /* TabBarView.m in Sources */,
+				4CC4323F19AE22510066C289 /* NavigationViewController.m in Sources */,
+				4C5C60C919AE1D8A0078C15F /* main.m in Sources */,
+				4C5C60CD19AE1DAF0078C15F /* TabBarViewController.m in Sources */,
+				4CC4324419AE24FF0066C289 /* UIImage+PY.m in Sources */,
+				4CC4324D19AE41290066C289 /* CategoryTableViewController.m in Sources */,
+				4C5C60C819AE1D8A0078C15F /* AppDelegate.m in Sources */,
+				4CC4325319AE41B30066C289 /* PlayViewController.m in Sources */,
+				4CC4325619AE420A0066C289 /* SettingViewController.m in Sources */,
+				4CC4324A19AE29800066C289 /* TabBarButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,8 +603,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "蔷薇岛屿/蔷薇岛屿-Prefix.pch";
-				INFOPLIST_FILE = "蔷薇岛屿/蔷薇岛屿-Info.plist";
+				GCC_PREFIX_HEADER = "蔷薇岛屿/Classes/Other/蔷薇岛屿-Prefix.pch";
+				INFOPLIST_FILE = "蔷薇岛屿/Classes/Other/蔷薇岛屿-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -374,8 +617,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "蔷薇岛屿/蔷薇岛屿-Prefix.pch";
-				INFOPLIST_FILE = "蔷薇岛屿/蔷薇岛屿-Info.plist";
+				GCC_PREFIX_HEADER = "蔷薇岛屿/Classes/Other/蔷薇岛屿-Prefix.pch";
+				INFOPLIST_FILE = "蔷薇岛屿/Classes/Other/蔷薇岛屿-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -443,6 +686,7 @@
 				4C4E96FC19ACD4AB00E744BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C4E96FD19ACD4AB00E744BB /* Build configuration list for PBXNativeTarget "蔷薇岛屿Tests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +695,7 @@
 				4C4E96FF19ACD4AB00E744BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

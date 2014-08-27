@@ -7,17 +7,25 @@
 //
 
 #import "AppDelegate.h"
+#import "TabBarViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // 1.目前只对iOS6有效(显示状态栏)
+    application.statusBarHidden = NO;
+    
+    // 2.创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    // 3.设置根控制器
+    TabBarViewController *root = [[TabBarViewController alloc] init];
+    self.window.rootViewController = root;
+    
+    // 4.显示窗口
     [self.window makeKeyAndVisible];
-    //sdfasd
-    //sdfasddfasdf
+
     
     return YES;
 }
