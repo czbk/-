@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CA652B18-0391-4CCC-8BD3-2E38F362C852</string>
+	<key>IDESourceControlProjectName</key>
+	<string>蔷薇岛屿</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7A426A46-6561-4422-91A2-5268F79108FE</key>
+		<string>https://github.com/czbk/-.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>蔷薇岛屿.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7A426A46-6561-4422-91A2-5268F79108FE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/czbk/-.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7A426A46-6561-4422-91A2-5268F79108FE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7A426A46-6561-4422-91A2-5268F79108FE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>蔷薇岛屿</string>
+		</dict>
+	</array>
+</dict>
+</plist>
