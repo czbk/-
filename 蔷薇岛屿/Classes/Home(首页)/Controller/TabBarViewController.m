@@ -35,6 +35,21 @@
 }
 
 /**
+ *  删除原来tabBar上的按钮
+ */
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // 移除之前的4个UITabBarButton
+    for (UIView *child in self.tabBar.subviews) {
+        if ([child isKindOfClass:[UIControl class]]) { //UITabBarButton
+            [child removeFromSuperview];
+        }
+    }
+}
+
+/**
  *  添加一个自定义的tabbar
  */
 - (void)addTabbar

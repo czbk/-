@@ -27,9 +27,8 @@
         // 2.文字居中
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         self.titleLabel.font = [UIFont systemFontOfSize:12];
-        if (iOS7) {
-            [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        }
+        [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        
         
         // 3.设置选中时的背景图片
         [self setBackgroundImage:[UIImage resizedImage:@"tabbar_slider"] forState:UIControlStateSelected];
