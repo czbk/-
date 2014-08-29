@@ -21,6 +21,9 @@
 		4C5C60C919AE1D8A0078C15F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C60BD19AE1D8A0078C15F /* main.m */; };
 		4C5C60CA19AE1D8A0078C15F /* 蔷薇岛屿-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C5C60BE19AE1D8A0078C15F /* 蔷薇岛屿-Info.plist */; };
 		4C5C60CD19AE1DAF0078C15F /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C60CC19AE1DAF0078C15F /* TabBarViewController.m */; };
+		4C87618119B0DA9500025AFD /* BaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C87618019B0DA9500025AFD /* BaseSettingViewController.m */; };
+		4C87618519B0ED2300025AFD /* SettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C87618419B0ED2300025AFD /* SettingGroup.m */; };
+		4C87618819B0EF0F00025AFD /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C87618719B0EF0F00025AFD /* SettingCell.m */; };
 		4CC4323F19AE22510066C289 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4323E19AE22510066C289 /* NavigationViewController.m */; };
 		4CC4324419AE24FF0066C289 /* UIImage+PY.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4324319AE24FF0066C289 /* UIImage+PY.m */; };
 		4CC4324719AE28690066C289 /* TabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4324619AE28690066C289 /* TabBarView.m */; };
@@ -60,6 +63,12 @@
 		4C5C60BF19AE1D8A0078C15F /* 蔷薇岛屿-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "蔷薇岛屿-Prefix.pch"; sourceTree = "<group>"; };
 		4C5C60CB19AE1DAF0078C15F /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		4C5C60CC19AE1DAF0078C15F /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		4C87617F19B0DA9500025AFD /* BaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSettingViewController.h; sourceTree = "<group>"; };
+		4C87618019B0DA9500025AFD /* BaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingViewController.m; sourceTree = "<group>"; };
+		4C87618319B0ED2300025AFD /* SettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingGroup.h; sourceTree = "<group>"; };
+		4C87618419B0ED2300025AFD /* SettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingGroup.m; sourceTree = "<group>"; };
+		4C87618619B0EF0F00025AFD /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
+		4C87618719B0EF0F00025AFD /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
 		4CC4323D19AE22510066C289 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		4CC4323E19AE22510066C289 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		4CC4324019AE241A0066C289 /* Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
@@ -348,6 +357,8 @@
 		4C5C60C519AE1D8A0078C15F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4C87617F19B0DA9500025AFD /* BaseSettingViewController.h */,
+				4C87618019B0DA9500025AFD /* BaseSettingViewController.m */,
 				4CC4325419AE420A0066C289 /* SettingViewController.h */,
 				4CC4325519AE420A0066C289 /* SettingViewController.m */,
 			);
@@ -357,6 +368,7 @@
 		4C5C60C619AE1D8A0078C15F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4C87618219B0ECD400025AFD /* Group */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -364,8 +376,19 @@
 		4C5C60C719AE1D8A0078C15F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4C87618619B0EF0F00025AFD /* SettingCell.h */,
+				4C87618719B0EF0F00025AFD /* SettingCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4C87618219B0ECD400025AFD /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				4C87618319B0ED2300025AFD /* SettingGroup.h */,
+				4C87618419B0ED2300025AFD /* SettingGroup.m */,
+			);
+			path = Group;
 			sourceTree = "<group>";
 		};
 		4CC4324119AE24C90066C289 /* Category */ = {
@@ -479,11 +502,14 @@
 				4C5C60C919AE1D8A0078C15F /* main.m in Sources */,
 				4C5C60CD19AE1DAF0078C15F /* TabBarViewController.m in Sources */,
 				4CC4324419AE24FF0066C289 /* UIImage+PY.m in Sources */,
+				4C87618119B0DA9500025AFD /* BaseSettingViewController.m in Sources */,
 				4CC4324D19AE41290066C289 /* CategoryTableViewController.m in Sources */,
 				4C5C60C819AE1D8A0078C15F /* AppDelegate.m in Sources */,
 				4CC4325319AE41B30066C289 /* PlayViewController.m in Sources */,
+				4C87618819B0EF0F00025AFD /* SettingCell.m in Sources */,
 				4CC4325619AE420A0066C289 /* SettingViewController.m in Sources */,
 				4CC4324A19AE29800066C289 /* TabBarButton.m in Sources */,
+				4C87618519B0ED2300025AFD /* SettingGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
