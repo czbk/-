@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SettingItem;
 
 @interface SettingCell : UITableViewCell
+
+@property (nonatomic, strong) SettingItem *item;
+@property (nonatomic, assign, getter = isLastRowInSection) BOOL lastRowInSection;
+
++ (instancetype)cellWithTableView:(UITableView *)tableView;
 
 @end

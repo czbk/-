@@ -8,7 +8,10 @@
 
 #import "BaseSettingViewController.h"
 #import "SettingGroup.h"
-
+#import "SettingCell.h"
+#import "SettingItem.h"
+#import "SettingArrowItem.h"
+#import "SettingSwitchItem.h"
 
 
 @interface BaseSettingViewController ()
@@ -25,6 +28,16 @@
 - (id)initWithStyle:(UITableViewStyle)style
 {
     return [super initWithStyle:UITableViewStyleGrouped];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // 背景色
+    //  backgroundView 的优先级 >  backgroundColor
+    self.tableView.backgroundView = nil;
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg"]];
 }
 
 - (NSMutableArray *)data
@@ -48,65 +61,55 @@
     return group.items.count;
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    // 1.创建cell
+    SettingCell *cell = [SettingCell cellWithTableView:tableView];
     
-    // Configure the cell...
+    // 2.给cell传递模型数据
+    SettingGroup *group = self.data[indexPath.section];
+    cell.item = group.items[indexPath.row];
+    cell.lastRowInSection =  (group.items.count - 1 == indexPath.row);
     
+    // 3.返回cell
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a story board-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    // 1.取消选中这行
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    // 2.模型数据
+    SettingGroup *group = self.data[indexPath.section];
+    SettingItem *item = group.items[indexPath.row];
+    
+    if (item.option) { // block有值(点击这个cell,.有特定的操作需要执行)
+        item.option();
+    } else if ([item isKindOfClass:[SettingArrowItem class]]) { // 箭头
+        SettingArrowItem *arrowItem = (SettingArrowItem *)item;
+        
+        // 如果没有需要跳转的控制器
+        if (arrowItem.destVcClass == nil) return;
+        
+        UIViewController *vc = [[arrowItem.destVcClass alloc] init];
+        vc.title = arrowItem.title;
+        [self.navigationController pushViewController:vc  animated:YES];
+    }
 }
 
- */
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    SettingGroup *group = self.data[section];
+    return group.header;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+{
+    SettingGroup *group = self.data[section];
+    return group.footer;
+}
+
 
 @end

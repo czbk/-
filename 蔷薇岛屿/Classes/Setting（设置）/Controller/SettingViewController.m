@@ -7,114 +7,98 @@
 //
 
 #import "SettingViewController.h"
-
-@interface SettingViewController ()
-
-@end
+#import "SettingArrowItem.h"
+#import "SettingLableItem.h"
+#import "SettingSwitchItem.h"
+#import "SettingItem.h"
+#import "MBProgressHUD+MJ.h"
+#import "SettingGroup.h"
 
 @implementation SettingViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
+
+
+- (void)setupGroup1
 {
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    SettingItem *update = [SettingItem itemWithIcon:@"MoreUpdate" title:@"检查新版本"];
+    update.option = ^{
+        // 弹框提示
+        [MBProgressHUD showMessage:@"正在拼命检查中....."];
+        
+#warning 发送网络请求
+        // 几秒后消失
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            // 移除HUD
+            [MBProgressHUD hideHUD];
+            
+            // 提醒有没有新版本
+            [MBProgressHUD showError:@"没有新版本"];
+        });
+    };
+    SettingArrowItem *help = [SettingArrowItem itemWithIcon:@"MoreHelp" title:@"版权说明"];
+    SettingItem *share = [SettingItem itemWithIcon:@"MoreShare" title:@"分享" ];
+    share.option = ^{
+        // 弹框提示
+        [MBProgressHUD showMessage:@"分享页面现在还没做哦哦！！！！！"];
+        
+#warning 还再研究啊
+        // 几秒后消失
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            // 移除HUD
+            [MBProgressHUD hideHUD];
+            
+            // 提醒有没有新版本
+            [MBProgressHUD showError:@"没有新版本"];
+        });
+    };
+
+//    MJSettingItem *viewMsg = [MJSettingArrowItem itemWithIcon:@"MoreMessage" title:@"查看消息" destVcClass:[MJTest2ViewController class]];
+//    MJSettingItem *product = [MJSettingArrowItem itemWithIcon:@"MoreNetease" title:@"产品推荐" destVcClass:[MJProductViewController class]];
+//    MJSettingItem *about = [MJSettingArrowItem itemWithIcon:@"MoreAbout" title:@"关于" destVcClass:[MJAboutViewController class]];
+    
+    SettingGroup *group = [[SettingGroup alloc] init];
+    group.items = @[update, help, share];
+    [self.data addObject:group];
+}
+
+/**
+ *  第0组数据
+ */
+- (void)setupGroup0
+{
+    SettingItem *appCommentary = [SettingItem itemWithIcon:@"MorePush" title:@"软件评论" ];
+    appCommentary.option = ^{
+        // 弹框提示
+        [MBProgressHUD showMessage:@"正在打开app评分"];
+#warning 还再研究啊
+        // 几秒后消失
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            // 移除HUD
+            [MBProgressHUD hideHUD];
+            
+            // 提醒有没有新版本
+            [MBProgressHUD showError:@"打开失败，功能未完成"];
+        });
+    };
+    SettingSwitchItem *handShake = [SettingSwitchItem itemWithIcon:@"handShake" title:@"摇一摇机选"];
+    SettingSwitchItem *soundEffect = [SettingSwitchItem itemWithIcon:@"sound_Effect" title:@"声音效果"];
+    
+    SettingGroup *group = [[SettingGroup alloc] init];
+    group.items = @[appCommentary, handShake, soundEffect];
+    [self.data addObject:group];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    self.title = @"设置";
     
-    return cell;
+    [self setupGroup0];
+    [self setupGroup1];
+    
+
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a story board-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-
- */
 
 @end

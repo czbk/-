@@ -24,6 +24,13 @@
 		4C87618119B0DA9500025AFD /* BaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C87618019B0DA9500025AFD /* BaseSettingViewController.m */; };
 		4C87618519B0ED2300025AFD /* SettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C87618419B0ED2300025AFD /* SettingGroup.m */; };
 		4C87618819B0EF0F00025AFD /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C87618719B0EF0F00025AFD /* SettingCell.m */; };
+		4C87618C19B189FE00025AFD /* SettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C87618B19B189FE00025AFD /* SettingItem.m */; };
+		4C87618F19B1D53A00025AFD /* SettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C87618E19B1D53A00025AFD /* SettingArrowItem.m */; };
+		4C87619219B1D89800025AFD /* SettingSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C87619119B1D89800025AFD /* SettingSwitchItem.m */; };
+		4C87619519B1DB0300025AFD /* SettingLableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C87619419B1DB0300025AFD /* SettingLableItem.m */; };
+		4C87619D19B1E79000025AFD /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C87619919B1E79000025AFD /* MBProgressHUD+MJ.m */; };
+		4C87619E19B1E79000025AFD /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4C87619A19B1E79000025AFD /* MBProgressHUD.bundle */; };
+		4C87619F19B1E79000025AFD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C87619C19B1E79000025AFD /* MBProgressHUD.m */; };
 		4CC4323F19AE22510066C289 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4323E19AE22510066C289 /* NavigationViewController.m */; };
 		4CC4324419AE24FF0066C289 /* UIImage+PY.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4324319AE24FF0066C289 /* UIImage+PY.m */; };
 		4CC4324719AE28690066C289 /* TabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4324619AE28690066C289 /* TabBarView.m */; };
@@ -69,6 +76,19 @@
 		4C87618419B0ED2300025AFD /* SettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingGroup.m; sourceTree = "<group>"; };
 		4C87618619B0EF0F00025AFD /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
 		4C87618719B0EF0F00025AFD /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
+		4C87618A19B189FE00025AFD /* SettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingItem.h; sourceTree = "<group>"; };
+		4C87618B19B189FE00025AFD /* SettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingItem.m; sourceTree = "<group>"; };
+		4C87618D19B1D53A00025AFD /* SettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingArrowItem.h; sourceTree = "<group>"; };
+		4C87618E19B1D53A00025AFD /* SettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingArrowItem.m; sourceTree = "<group>"; };
+		4C87619019B1D89800025AFD /* SettingSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSwitchItem.h; sourceTree = "<group>"; };
+		4C87619119B1D89800025AFD /* SettingSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingSwitchItem.m; sourceTree = "<group>"; };
+		4C87619319B1DB0300025AFD /* SettingLableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingLableItem.h; sourceTree = "<group>"; };
+		4C87619419B1DB0300025AFD /* SettingLableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingLableItem.m; sourceTree = "<group>"; };
+		4C87619819B1E79000025AFD /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		4C87619919B1E79000025AFD /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		4C87619A19B1E79000025AFD /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		4C87619B19B1E79000025AFD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4C87619C19B1E79000025AFD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		4CC4323D19AE22510066C289 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		4CC4323E19AE22510066C289 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		4CC4324019AE241A0066C289 /* Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
@@ -300,6 +320,8 @@
 		4C5C60BA19AE1D8A0078C15F /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				4C8761A019B1EB2500025AFD /* WebResource */,
+				4C87619619B1E79000025AFD /* Lib */,
 				4CC4324119AE24C90066C289 /* Category */,
 				4C5C60BB19AE1D8A0078C15F /* AppDelegate.h */,
 				4C5C60BC19AE1D8A0078C15F /* AppDelegate.m */,
@@ -368,6 +390,7 @@
 		4C5C60C619AE1D8A0078C15F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4C87618919B186A600025AFD /* Item */,
 				4C87618219B0ECD400025AFD /* Group */,
 			);
 			path = Model;
@@ -389,6 +412,48 @@
 				4C87618419B0ED2300025AFD /* SettingGroup.m */,
 			);
 			path = Group;
+			sourceTree = "<group>";
+		};
+		4C87618919B186A600025AFD /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				4C87618A19B189FE00025AFD /* SettingItem.h */,
+				4C87618B19B189FE00025AFD /* SettingItem.m */,
+				4C87618D19B1D53A00025AFD /* SettingArrowItem.h */,
+				4C87618E19B1D53A00025AFD /* SettingArrowItem.m */,
+				4C87619019B1D89800025AFD /* SettingSwitchItem.h */,
+				4C87619119B1D89800025AFD /* SettingSwitchItem.m */,
+				4C87619319B1DB0300025AFD /* SettingLableItem.h */,
+				4C87619419B1DB0300025AFD /* SettingLableItem.m */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		4C87619619B1E79000025AFD /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				4C87619719B1E79000025AFD /* MBProgressHUD */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		4C87619719B1E79000025AFD /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4C87619819B1E79000025AFD /* MBProgressHUD+MJ.h */,
+				4C87619919B1E79000025AFD /* MBProgressHUD+MJ.m */,
+				4C87619A19B1E79000025AFD /* MBProgressHUD.bundle */,
+				4C87619B19B1E79000025AFD /* MBProgressHUD.h */,
+				4C87619C19B1E79000025AFD /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		4C8761A019B1EB2500025AFD /* WebResource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebResource;
 			sourceTree = "<group>";
 		};
 		4CC4324119AE24C90066C289 /* Category */ = {
@@ -476,6 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4E96DC19ACD4AB00E744BB /* InfoPlist.strings in Resources */,
+				4C87619E19B1E79000025AFD /* MBProgressHUD.bundle in Resources */,
 				4C4E96E419ACD4AB00E744BB /* Images.xcassets in Resources */,
 				4C5C60CA19AE1D8A0078C15F /* 蔷薇岛屿-Info.plist in Resources */,
 			);
@@ -497,14 +563,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CC4325019AE41830066C289 /* HotViewController.m in Sources */,
+				4C87619D19B1E79000025AFD /* MBProgressHUD+MJ.m in Sources */,
 				4CC4324719AE28690066C289 /* TabBarView.m in Sources */,
+				4C87618C19B189FE00025AFD /* SettingItem.m in Sources */,
 				4CC4323F19AE22510066C289 /* NavigationViewController.m in Sources */,
 				4C5C60C919AE1D8A0078C15F /* main.m in Sources */,
+				4C87618F19B1D53A00025AFD /* SettingArrowItem.m in Sources */,
+				4C87619F19B1E79000025AFD /* MBProgressHUD.m in Sources */,
 				4C5C60CD19AE1DAF0078C15F /* TabBarViewController.m in Sources */,
 				4CC4324419AE24FF0066C289 /* UIImage+PY.m in Sources */,
+				4C87619519B1DB0300025AFD /* SettingLableItem.m in Sources */,
 				4C87618119B0DA9500025AFD /* BaseSettingViewController.m in Sources */,
 				4CC4324D19AE41290066C289 /* CategoryTableViewController.m in Sources */,
 				4C5C60C819AE1D8A0078C15F /* AppDelegate.m in Sources */,
+				4C87619219B1D89800025AFD /* SettingSwitchItem.m in Sources */,
 				4CC4325319AE41B30066C289 /* PlayViewController.m in Sources */,
 				4C87618819B0EF0F00025AFD /* SettingCell.m in Sources */,
 				4CC4325619AE420A0066C289 /* SettingViewController.m in Sources */,
